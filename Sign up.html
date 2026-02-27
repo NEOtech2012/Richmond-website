@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Good/things.jpg">
+    <title>Form</title>
+
+    <style>
+        /* Change your existing body style to this */
+body {
+    background-image: url('photo-1616486338812-3dadae4b4ace.avif'); /* Cleaned up the path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+    /* Add this to stack the H1 on top of the Form */
+.main-container {
+    display: flex;
+    flex-direction: column; /* This stacks children vertically */
+    align-items: center;
+}
+
+    h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Makes text pop against background */
+    margin-bottom: 20px;
+}
+
+        form {
+            background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            width: 300px;
+        }
+
+        input {
+    margin-bottom: 15px; /* Adds space between the box and the next label */
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't make the box wider than the form */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+        input[type="submit"] {
+            background-color: #00d4ff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0099cc;
+        }
+
+        img{
+            width: 100px;
+        }
+    </style>
+
+    
+</head>
+    <body>
+
+        
+    <div class="main-container">
+        <h1>Create an Account</h1>
+    <form id="sign-in-Form" action="index.html" method="GET">
+    <label for="username">Username:</label> <br>
+    <input type="text" name="username" id="username" required> <br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" id="password" required> <br>
+
+    <label for="Email address">Email address:</label><br>
+    <input type="email" name="email" id="email" required> <br>
+
+    <label for="Name">First name:</label><br>
+    <input type="Name" name="Name" id="Name" required> <br>
+
+    <label for="password">Last name:</label><br>
+    <input type="Last name" name="Last name" id="Last Name" required> <br>
+
+    <label for="Phone number">Phone number:</label><br>
+    <input type="Phone number" name="Phone number" id="Phone number" required> <br>
+    
+    <input type="submit" value="Submit">
+
+    </form>
+    </div>
+
+    
+
+    <script>
+        
+    // Wait for the document to load
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('sign-in-form');
+
+        form.addEventListener('submit', (event) => {
+            // event.preventDefault(); // Uncomment this if you want to stop the URL redirect and do something else first
+            console.log("Form submitted!");
+            // The browser will now naturally follow the 'action' attribute to index.html
+        });
+    });
+</script>
+    
+
+</body>
+</html>

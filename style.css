@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Clean, modern font */
+    color: white;
+}
+
+/* Hero Background */
+.hero {
+    height: 100vh;
+    /* This uses a high-res minimalist interior photo from Unsplash */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), 
+                url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Hero Text */
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.cta-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}
+

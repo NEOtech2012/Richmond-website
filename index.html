@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Good/things.jpg">
+    <title>Objects | Elegant Glassware</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .green-footer {
+    background-color: #2D5A27; /* Dark Green */
+    color: white;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-col a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Social Icons Styling */
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials i {
+    font-size: 28px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.footer-socials i:hover {
+    transform: scale(1.2); /* Makes icons pop when hovered */
+    color: #a8e0a3; /* Light green hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Objects</div>
+            <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>            
+    <li><a href="Shop.html">Shop</a></li>
+    <li><a href="bestsellers.html">Bestsellers</a></li>
+    <li><a href="build-set.html">Build Your Set</a></li>
+    <li><a href="lookbook.html">Storybook</a></li>
+</ul>
+            <div class="nav-icons">
+              <a href="Login.html">Login</a>  <span>🔍</span> <span>👤</span> <span id="cart-icon">Saved (0)</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            
+        </div>
+    </main>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<footer class="green-footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="Good/things.jpg" alt="Clipboard Logo" width="120">
+        </div>
+
+        <div class="footer-col">
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Install Guide</a>
+        </div>
+
+        <div class="footer-col">
+            <a href="#">Contact Us</a>
+            <a href="#">Press Kit</a>
+        </div>
+
+        <div class="footer-socials">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/08030955700" target="_blank"><i class="fab fa-whatsapp"></i></a> 
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+    </div>
+</footer>
+
+</body>
+</html>

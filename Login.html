@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Good/things.jpg">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+        body {
+    /* Replace with the actual path to your gaming room image */
+    background: url('gaming-room-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-card {
+    background-color: rgba(26, 15, 20, 0.9); /* Dark, semi-transparent purple/black */
+    width: 320px;
+    padding: 40px 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+label {
+    color: white;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.submit-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    padding: 6px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.signup-link {
+    display: block;
+    margin-top: 25px;
+    color: #4b2c7e; /* The purple color from your screenshot */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="login-card">
+    <h2>Login</h2>
+
+    <form>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" style="width: 100%; padding: 8px; border-radius: 4px; border: none;" placeholder="Enter password">
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <p style="color: white; margin: 20px 0; font-size: 14px;">— OR —</p>
+
+    <div class="google-login">
+        <div id="g_id_onload"
+             data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+             data-context="signin"
+             data-ux_mode="popup"
+             data-callback="handleCredentialResponse"
+             data-auto_prompt="false">
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="signin_with" data-size="large" data-logo_alignment="left"></div>
+        </div>
+    </div>
+
+    <a href="Sign up.html" class="signup-link" style="color: white;">Sign up</a>
+</div>
+    
+
+    <script>
+        // 1. Select the form element
+const loginForm = document.getElementById('loginForm');
+
+// 2. Listen for the 'submit' event
+loginForm.addEventListener('submit', function(event) {
+    // Prevent the page from refreshing (the default behavior)
+    event.preventDefault();
+
+    // Get the password value (optional: check if it's correct first)
+    const password = document.querySelector('input[name="password"]').value;
+
+    if (password !== "") {
+        // 3. Redirect to your local index.html file
+        window.location.href = "index.html";
+    } else {
+        alert("Please enter a password!");
+    }
+});
+
+// Keep your Google function as well
+function handleCredentialResponse(response) {
+    console.log("Logged in via Google!");
+    window.location.href = "index.html";
+}
+
+// Add an ID to your form: <form id="loginForm">
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop the error 400 from stopping you
+    
+    // This will force the redirect when you click 'Submit'
+    window.location.href = "index.html"; 
+});
+    </script>
+</body>
+</html>

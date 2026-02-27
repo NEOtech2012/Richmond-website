@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Good/things.jpg">
+    <title>Shop items</title>
+
+    <style>
+        body{
+            background-color: rgba(46, 119, 109, 0.747);
+        }
+
+        p, h3{
+            color: aqua;
+        }
+
+        h1{
+            color: rgba(226, 125, 30, 0.699);
+        }
+
+        /* This removes all side gaps from the main container */
+.shop-container {
+    background-color: #000;
+    padding: 60px 0; /* Top/Bottom padding only, 0 on sides */
+    width: 100vw;    /* 100% of the Viewport Width */
+    margin: 0;
+}
+
+/* This makes the title align with the edge */
+.section-title {
+    color: #2270459d;
+    border-left: 4px solid #00d4ff;
+    margin-left: 20px; /* Small gap so it's not touching the screen edge */
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+/* The Grid that stretches to the edge */
+.product-grid {
+    display: grid;
+    /* This makes the items fill the entire screen width */
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); 
+    gap: 10px; /* Small gaps between items for that tight tech look */
+    width: 100%;
+}
+
+.product-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 0; /* Square edges look better for edge-to-edge grids */
+    border: 1px solid #222;
+}
+    </style>
+</head>
+<body>
+    <section id="shop" class="shop-container">
+        <div class="shop-header">
+            <h1>Our Collection</h1>
+            <p>Hand-blown glassware designed for the modern home.</p>
+            <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>              
+    <li><a href="Shop.html">Shop</a></li>
+    <li><a href="bestsellers.html">Bestsellers</a></li>
+    <li><a href="build-set.html">Build Your Set</a></li>
+    <li><a href="lookbook.html">Storybook</a></li>
+</ul>
+        </div>
+
+<div class="product-grid">
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 1.jpg" alt="Lagos Mansion"></div>
+        
+        <h3>The Lekki Cube</h3><p>Lagos, Nigeria</p><p class="price">$1,199.00</p><button class="add-to-cart">Save Property</button>
+        
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 2.jpg" alt="Abuja Villa"></div>
+        <h3>Maitama Grand</h3><p>Abuja, Nigeria</p><p class="price">$2,100.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 3.jpg" alt="Colonial House"></div>
+        <h3>Heritage House</h3><p>Yaba, Lagos</p><p class="price">$2,199.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 4.jpg" alt="Duplex"></div>
+        <h3>The Twin Terrace</h3><p>Victoria Island, Lagos</p><p class="price">$2,300.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 5.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,200.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 6.jpg" alt="Earth House"></div>
+        <h3>Bulgalow</h3><p>Bwari, Abuja</p><p class="price">$2,250.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 7.jpg" alt="Earth House"></div>
+        <h3>Mansion</h3><p>Enugu, Enugu</p><p class="price">$2,390.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 8.jpg" alt="Earth House"></div>
+        <h3>Mansion</h3><p>Kanduna, Gome</p><p class="price">$2,420.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 9.jpg" alt="Earth House"></div>
+        <h3>Luxury house</h3><p>Kano, Adolo</p><p class="price">$2,430.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 10.jpg" alt="Earth House"></div>
+        <h3>House</h3><p>UK, Liverpool</p><p class="price">$2,450.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 11.jpg" alt="Earth House"></div>
+        <h3>5 bedroom flats</h3><p>Kogi, Caugo</p><p class="price">$2,490.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 12.jpg" alt="Earth House"></div>
+        <h3>3 bedroom flats</h3><p>Jos, Plateau</p><p class="price">$2,510.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 13.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,530.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 14.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,540.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 15.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,550.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 16.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,600.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 17.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,590.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 18.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,670.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 19.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$2,800.00</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image"><img src="Good/House 20.jpg" alt="Earth House"></div>
+        <h3>Eco-Lodge</h3><p>Jos, Plateau</p><p class="price">$5,000</p><button class="add-to-cart">Save Property</button>
+    </div>
+
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
